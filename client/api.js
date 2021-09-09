@@ -9,3 +9,10 @@ export function getWelcome () {
     .then(response => response.body)
 }
 // ***   ***   ***
+
+export function getApod () {
+  return request
+    .get(`${serverURL}/apod`)
+    .then(res => JSON.parse(res.body.text))
+    .catch(err => console.log('oh no!', err.message))
+}
