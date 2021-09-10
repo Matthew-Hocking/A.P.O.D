@@ -6,7 +6,7 @@ const Nav = () => {
     <>
       <nav>
         <a href="/">
-          <h1>HOME</h1>
+          <h1 className="home">HOME</h1>
         </a>
       </nav>
     </>

@@ -1,7 +1,115 @@
 body {
-  max-width: 99vw;
+margin: 0;
 }
 
-.apod {
+h1 {
+  color: #fff;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 10vw;
+  margin: 0;
+  margin-top: -40px;
+  text-shadow: #000 1px 0 10px;
+}
 
+h2 {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  font-size: 2.9vw;
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
+nav {
+  background-color: #0b3d91;
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 100%;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 10%), 0 3px 6px rgb(0 0 0 / 17%);
+}
+
+nav a {
+  color: aliceblue;
+  text-decoration: none;
+  display: block;
+  padding: 8px;
+}
+
+.banner {
+  background-image: url(./space.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  text-align: center;
+  padding-bottom: 50px;
+  min-height: 1000px;
+}
+
+.nasa-logo {
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  filter: drop-shadow(7px 7px 7px #222);
+}
+
+button {
+  text-decoration: none;
+  border-radius: 50px;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+background-color: #fff;
+color: #0b3d91;
+font-weight: 900;
+box-shadow: 0 16px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.get-apod {
+  background-color: #0b3d91;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  padding: 20px 55px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-body {
+  text-align: center;
+}
+
+.footer {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  bottom: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
 }
