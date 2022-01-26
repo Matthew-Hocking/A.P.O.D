@@ -1,23 +1,20 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
+import { Route } from 'react-router-dom'
 
-import { getWelcome } from '../api'
+import Nav from './Nav'
+import Banner from './Banner'
+import Apod from './Apod'
+import Footer from './Footer'
 
 function App () {
-  const [welcomeStatement, setWelcomeStatement] = useState('')
-
-  useEffect(() => {
-    getWelcome()
-      .then(res => {
-        setWelcomeStatement(res.statement)
-        return null
-      })
-      .catch((err) => {
-        console.error(err.message)
-      })
-  })
 
   return (
-    <h1>{welcomeStatement}</h1>
+    <>
+      <Route eaxct path="/apod" component={Nav} />
+      <Route exact path="/" component={Banner} />
+      <Route exact path="/apod" component={Apod} />
+      <Route path="/" component={Footer} />
+    </>
   )
 }
 
