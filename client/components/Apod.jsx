@@ -12,14 +12,14 @@ function Apod() {
   }, [])
 
   return (
-    <>
+    <div>
       {apod && (
-        <>
-        <p>{apod.date},{apod.title}</p>
-          <img src={apod.url} />
-        </>
+        <div className="details">
+        {/* <p>{apod.date},{apod.title}</p> */}
+          <img className="apod--img" src={apod.url} />
+        </div>
       )}
-    </>
+    </div>
   )
 }
 
